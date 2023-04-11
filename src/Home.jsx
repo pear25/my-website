@@ -1,21 +1,21 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './Home.css'
 import TopIntro from './components/TopIntro'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import About from './components/About'
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className="Home">
       <Navbar />
       <TopIntro />
-      <Footer />
     </div>
   )
 }
 
-export default App
+export default Home
