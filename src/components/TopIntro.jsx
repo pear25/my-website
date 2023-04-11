@@ -4,6 +4,7 @@ import hkstp from '../assets/hkstp.jpeg'
 import moneed from '../assets/moneed.jpeg'
 import { useRef, useEffect } from 'react';
 import Navbar from './Navbar';
+import Typer from './Typer';
 
 
 const TopIntro = () => {
@@ -15,7 +16,7 @@ const TopIntro = () => {
                 <div className='max-w-sm overflow-hidden rounded-xl shadow-xl'>
                     <img className="rounded-t-xl" src={gif} />
                     <div className='py-4 '>
-                        <span className='p-4'>Stay Cool~</span>
+                        <span className='p-4'><Typer text={["Welcome to my page 🧤", "Stay cool 🥶 🥶"]} /></span>
                     </div>
                 </div>
 
