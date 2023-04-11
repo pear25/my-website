@@ -3,6 +3,7 @@ import logo from '../assets/ch_logo.png'
 import hkstp from '../assets/hkstp.jpeg'
 import moneed from '../assets/moneed.jpeg'
 import { useRef, useEffect } from 'react';
+import Navbar from './Navbar';
 
 
 const TopIntro = () => {
