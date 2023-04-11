@@ -21,7 +21,7 @@ const TopIntro = () => {
 
             </div>
             <div className="md:w-2/3 mt-12 md:mt-0 w-full p-4">
-                <h1 className="block text-2xl font-semibold border-b border-gray-300 md:pb-2">Welcome to my web 😬, please take off your shoes. 🙏</h1>
+                <h1 className="block text-2xl font-semibold border-b border-gray-300 md:pb-2">Welcome to my internet home 😬, please take off your shoes 👞.</h1>
                 {/* <hr class="border-b border-gray-300 " /> */}
 
                 <div className='mt-4'>
