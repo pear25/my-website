@@ -17,10 +17,10 @@ const Typer = (props) => {
 
     return (
         <ReactTypingEffect
-            typingDelay={1500}
-            speed={50}
-            eraseDelay={4000}
-            eraseSpeed={100}
+            typingDelay={props.typingDelay}
+            speed={props.speed}
+            eraseDelay={props.eraseDelay}
+            eraseSpeed={props.eraseSpeed}
             text={props.text}
             cursorRenderer={cursor => <p>{cursor}</p>}
             displayTextRenderer={(text, i) => {
@@ -31,7 +31,7 @@ const Typer = (props) => {
                             return (
                                 <span
                                     key={key}
-                                    style={{ color: generateRandomColor() }}
+                                    style={{ color: props.colorful ? generateRandomColor() : 0xFFFFFF }}
                                 >{char}</span>
                             );
                         })}

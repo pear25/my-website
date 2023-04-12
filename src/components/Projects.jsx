@@ -10,8 +10,8 @@ const Projects = () => {
     return (
         <>
             <Navbar />
-            <div className="md:space-y-8">
-                <div className="flex md:flex-row flex-col justify-center items-center md:space-x-8 space-y-8x md:space-y-0">
+            <div className="md:space-y-8 ">
+                <div className="flex md:flex-row flex-col justify-center items-center md:space-x-8 space-y-8 md:space-y-0">
                     <Project image={hkstp} title={'HKSTP Talent Game On'}
                         description={'Talent Game On 2K23 is a gamification platform for recruitment process in HKSTP, developed as a web game, where users are prompted to solve puzzle games. '} />
                     <Project image={moneed} title={'Moneed'}

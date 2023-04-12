@@ -15,7 +15,13 @@ const TopIntro = () => {
                 <div className='max-w-sm overflow-hidden rounded-xl shadow-xl'>
                     <img className="rounded-t-xl" src={gif} />
                     <div className='py-4 '>
-                        <span className='p-4'><Typer text={["Welcome to my page 🧤", "Stay cool 🥶 🥶"]} /></span>
+                        <span className='p-4'>
+                            <Typer text={["Welcome to my page 🧤", "Stay cool 🥶 🥶"]}
+                                typingDelay={1500}
+                                speed={50}
+                                eraseDelay={4000}
+                                eraseSpeed={100}
+                                colorful={true} /></span>
                     </div>
                 </div>
 
