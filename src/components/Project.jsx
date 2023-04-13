@@ -5,7 +5,7 @@ const Project = (props) => {
     const [image, setImage] = useState(props.image);
 
     return (
-        <div className="md:w-1/2 lg:w-1/3 w-full rounded-lg">
+        <div className="md:w-1/2 lg:w-1/4 w-full rounded-lg">
             <div className={`h-[250px] w-auto border-b-2 border-gray-300`}>
                 <img src={image} className={
 
