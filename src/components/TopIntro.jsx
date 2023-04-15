@@ -1,12 +1,21 @@
 import gif from '../assets/giphy.gif'
-import logo from '../assets/ch_logo.png'
-import hkstp from '../assets/hkstp.jpeg'
-import moneed from '../assets/moneed.jpeg'
-import { useRef, useEffect } from 'react';
 import Typer from './Typer';
+import ProjectBlock from './ProjectBlock';
+import RecentProjects from '../utils/RecentProjects';
 
 
 const TopIntro = () => {
+
+    const typerProps = {
+        text: ["Welcome to my page 🧤", "Stay cool 🥶 🥶"],
+        typingDelay: 1500,
+        speed: 50,
+        eraseDelay: 4000,
+        eraseSpeed: 100,
+        colorful: true,
+    }
+
+
 
     return (
 
@@ -16,19 +25,18 @@ const TopIntro = () => {
                     <img className="rounded-t-xl" src={gif} />
                     <div className='py-4 '>
                         <span className='p-4'>
-                            <Typer text={["Welcome to my page 🧤", "Stay cool 🥶 🥶"]}
-                                typingDelay={1500}
-                                speed={50}
-                                eraseDelay={4000}
-                                eraseSpeed={100}
-                                colorful={true} /></span>
+                            <Typer text={typerProps.text}
+                                typingDelay={typerProps.typingDelay}
+                                speed={typerProps.speed}
+                                eraseDelay={typerProps.eraseDelay}
+                                eraseSpeed={typerProps.eraseSpeed}
+                                colorful={typerProps.colorful} /></span>
                     </div>
                 </div>
 
             </div>
             <div className="md:w-2/3 mt-12 md:mt-0 w-full p-4">
                 <h1 className="block text-2xl font-semibold border-b border-gray-300 md:pb-2">Welcome to my internet home 😬, please take off your shoes 👞.</h1>
-                {/* <hr class="border-b border-gray-300 " /> */}
 
                 <div className='mt-4'>
                     <span id="self-intro" className='block'>
@@ -40,21 +48,18 @@ const TopIntro = () => {
                         My recent projects 📌:
                     </span>
                     <div className='flex flex-col md:flex-row gap-6 p-4'>
-                        <div className='md:w-1/3 w-full'>
-                            <a href='https://hello.careerhackers.io/pierson' target='_blank' rel='noopener noreferrer'>
-                                <img src={logo} className='bg-black object-cover w-full h-full rounded-xl mb-4' />
-                            </a>
-                        </div>
-                        <div className='md:w-1/3 w-full'>
-                            <a href='https://hkstp.careerhackers.io/play' target='_blank' rel='noopener noreferrer'>
-                                <img src={hkstp} className='overflow-hidden object-fit w-full h-full rounded-xl mb-4' />
-                            </a>
-                        </div>
-                        <div className='md:w-1/3 w-full'>
-                            <a href='https://github.com/pear25/moneed' target='_blank' rel='noopener noreferrer'>
-                                <img src={moneed} className='overflow-hidden object-fit w-full h-full rounded-xl mb-4' />
-                            </a>
-                        </div>
+                        {RecentProjects.map((project, i) => {
+                            return (
+                                <ProjectBlock
+                                    key={i}
+                                    link={project.link}
+                                    dark={project.dark}
+                                    logo={project.logo}
+                                    objectStyle={project.objectStyle}
+                                />
+                            )
+                        }
+                        )}
                     </div>
 
                 </div>
