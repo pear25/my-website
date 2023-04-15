@@ -12,7 +12,7 @@ const ProjectDetails = [
         image: hkstp,
         cover: true,
         title: `HKSTP Talent Game On`,
-        description: `Talent Game On 2K23 is a gamification platform for recruitment process in HKSTP, developed as a web game, where users are prompted to solve puzzle games.`,
+        description: `A gamification platform for recruitment process in HKSTP, developed as a web game, where users are prompted to solve puzzle games. Reached 1000+ signups and 5k+ plays in first week of launch`,
         build: ['AWS S3', 'Node.js', 'Vue'],
         site: {
             link: `https://hkstp.careerhackers.io/play`,
@@ -50,7 +50,7 @@ const ProjectDetails = [
         cover: true,
         build: ['Tailwind', 'Vite'],
         site: {
-            link: `pearlim.netlify.app`, //moneed link tbd
+            link: `https://pearlim.netlify.app`, //moneed link tbd
             path1: path.webSVG,
             viewbox: '0 0 1024 1024'
         },
@@ -65,7 +65,7 @@ const ProjectDetails = [
         dark: true,
         title: `NFC Business Card`,
         contain: true,
-        description: `reated NFC business cards marketed towards students to expand their network. Reaching 5000 users within 1 week of launch..`,
+        description: `Created NFC business cards marketed towards students to expand their network. Reaching 5000 users within 1 week of launch..`,
         build: ['Typescript', 'Nodejs', 'S3', 'Lambda'],
         site: {
             link: `https://hello.careerhackers.io/pierson`,
