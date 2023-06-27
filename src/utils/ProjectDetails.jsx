@@ -22,7 +22,7 @@ const ProjectDetails = [
         code: {
             link: ``,
             path1: path.codeSVG,
-
+            viewbox: '0 0 1024 1024',
         }
     },
     {
@@ -31,15 +31,15 @@ const ProjectDetails = [
         title: `Moneed`,
         description: `Final year project aiming to integrate a money management interface together with a group transaction bill-splitting feature.`,
         build: ['Reactjs', 'Node.js', 'MongoDB'],
-        site: {
-            link: `https://hkstp.careerhackers.io/play`, //moneed link tbd
-            path1: path.webSVG,
-            viewbox: '0 0 1024 1024'
-        },
         code: {
             link: `https://www.github.com/pear25/moneed`,
             path1: path.codeSVG,
-
+            viewbox: '0 0 24 24',
+        },
+        site: {
+            link: ``,
+            path1: path.webSVG,
+            viewbox: '0 0 1024 1024'
         }
     },
     {
@@ -50,14 +50,14 @@ const ProjectDetails = [
         cover: true,
         build: ['Tailwind', 'Vite'],
         site: {
-            link: `https://pearlim.netlify.app`, //moneed link tbd
+            link: `https://pearlim.netlify.app`,
             path1: path.webSVG,
-            viewbox: '0 0 1024 1024'
+            viewbox: '0 0 1024 1024',
         },
         code: {
             link: `https://www.github.com/pear25/my-website`,
             path1: path.codeSVG,
-
+            viewbox: '0 0 24 24',
         }
     },
     {
@@ -65,7 +65,7 @@ const ProjectDetails = [
         dark: true,
         title: `NFC Business Card`,
         contain: true,
-        description: `Created NFC business cards marketed towards students to expand their network. Reaching 5000 users within 1 week of launch..`,
+        description: `Created NFC business cards marketed towards students to expand their network. Reaching 5000 users within 1 week of launch.`,
         build: ['Typescript', 'Nodejs', 'S3', 'Lambda'],
         site: {
             link: `https://hello.careerhackers.io/pierson`,
@@ -75,14 +75,14 @@ const ProjectDetails = [
         code: {
             link: ``,
             path1: path.codeSVG,
-
+            viewbox: '0 0 24 24',
         }
     },
     {
         image: gym,
         cover: true,
         title: `Letsgojim Android app`,
-        description: `Upcoming project to be finished at May 2023, features a fitness lifestyle app that allows users to track their progress and provide sound recommendations to their fitness goals.`,
+        description: `A fitness lifestyle app that allows users to track their progress and provide sound recommendations to their fitness goals.`,
         build: ['Android Studio', 'Firebase'],
         site: {
             link: ``,
@@ -90,9 +90,9 @@ const ProjectDetails = [
             viewbox: '0 0 1024 1024'
         },
         code: {
-            link: ``,
+            link: `https://www.github.com/pear25/letsgojim`,
             path1: path.codeSVG,
-
+            viewbox: '0 0 24 24'
         }
     },
 
