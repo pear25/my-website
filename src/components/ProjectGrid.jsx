@@ -28,26 +28,17 @@ const ProjectGrid = (props) => {
                 <div>
                     {props.description}
                 </div>
-                {/* <div className='pt-8'>
-                    <p className='break-normal'>
-                        {props.build.map((b, i) => {
-                            return (
-                                <word className={`${i > 0 ? `ml-4` : ``} font-mono text-gray-100 bg-slate-700 p-2 rounded-lg text-sm`}>{b}</word>
-                            )
-                        })}
-                    </p>
-                </div> */}
-                <div className='pt-8 flex justify-start items-center gap-x-4'>
-                    <div className='flex'>
-                        {props?.site?.link !== "" &&
+                <div className='pt-8 flex justify-start items-center'>
+                    {props?.site?.link !== "" &&
+                        <div className='mr-4'>
                             <SVGLinks path1={props?.site?.path1} viewbox={props?.site?.viewbox} link={props?.site?.link} />
-                        }
-                    </div>
-                    <div>
-                        {props?.code?.link !== "" &&
+                        </div>
+                    }
+                    {props?.code?.link !== "" &&
+                        <div className=''>
                             <SVGLinks path1={props?.code?.path1} viewbox={props?.code?.viewbox} link={props?.code?.link} />
-                        }
-                    </div>
+                        </div>
+                    }
                 </div>
                 <div>
 

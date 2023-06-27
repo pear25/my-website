@@ -1,13 +1,18 @@
 import Profile from '../assets/profile.png'
+import BongoRight from "../assets/bongo_r.jpeg"
 import Navbar from './Navbar';
+import React from 'react';
 
 const About = () => {
+
+    const [avatar, setAvatar] = React.useState(Profile)
+
     return (
         <>
             <Navbar />
             <div className="flex flex-col justify-center items-center">
-                <div>
-                    <img src={Profile} className='h-[150px] border-2 p-4 border-gray-300 rounded-full' />
+                <div onClick={() => { setAvatar(prev => prev === Profile ? BongoRight : Profile) }}>
+                    <img src={avatar} className='h-[150px] border-2 p-4 border-gray-300 rounded-full' />
                 </div>
                 <div className='mt-6'>
                     <span className='text-3xl font-mono font-semibold hidden md:block'>Pierson Tarrantino Limas</span>
@@ -15,7 +20,7 @@ const About = () => {
 
                 </div>
                 <div className='my-6 space-y-2 font-light'>
-                    <span className='block text-md'>Fullstack web dev & AI optimist</span>
+                    <span className='block text-md'>Fullstack web dev</span>
                     <span className='block text-md'>CS undergrad @ CUHK</span>
                 </div>
 
